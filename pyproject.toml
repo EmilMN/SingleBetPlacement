@@ -1,0 +1,21 @@
+[tool.pytest]
+minversion = "9.0"
+addopts = ["-ra", "--strict-markers"]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = [
+    "api: tests that call the backend API directly (requests)",
+    "ui: end-to-end browser tests (Selenium + Chrome)",
+]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+extraPaths = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "PT", "SIM"]

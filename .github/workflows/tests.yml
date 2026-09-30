@@ -1,0 +1,37 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+# All tests share one user account, so never run two pipelines at once.
+concurrency:
+  group: tests
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.14"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Lint
+        run: ruff check . && ruff format --check .
+      - name: API tests
+        if: ${{ !cancelled() }}
+        run: pytest tests/api --junitxml=reports/junit-api.xml
+      - name: UI tests (headless Chrome)
+        if: ${{ !cancelled() }}
+        run: pytest tests/ui --junitxml=reports/junit-ui.xml
+      - name: Upload reports and failure screenshots
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: test-reports
+          path: reports/
