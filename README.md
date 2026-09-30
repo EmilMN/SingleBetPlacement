@@ -1,5 +1,7 @@
 # Single Bet Placement
 
+[![tests](https://github.com/EmilMN/SingleBetPlacement/actions/workflows/tests.yml/badge.svg)](https://github.com/EmilMN/SingleBetPlacement/actions/workflows/tests.yml)
+
 | Parts |
 |---|
 | [Test plan](TEST_PLAN.md): 6 prioritised scenarios |

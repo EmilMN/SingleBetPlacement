@@ -117,7 +117,7 @@ The 3 scenarios found 8 bugs (one scenario checks many things, so it can find se
 
 **Business Impact:** Every customer sees a wrong balance after each bet. Combined with BUG-01, any customer placing two bets in a row can overdraw.
 
-**Evidence:** `evidence/ui-stale-balance-after-bet.png`: header €5.99 after the first bet, while the API holds €0.99. After the second bet the API returned `-4.01`.
+**Evidence:** [evidence/ui-stale-balance-after-bet.png](evidence/ui-stale-balance-after-bet.png): header €5.99 after the first bet, while the API holds €0.99. After the second bet the API returned `-4.01`.
 
 ---
 
@@ -141,7 +141,7 @@ The 3 scenarios found 8 bugs (one scenario checks many things, so it can find se
 
 **Business Impact:** The customer's record of the bet shows the wrong winnings, which leads to disputes and support contacts.
 
-**Evidence:** `evidence/receipt-swapped-teams-wrong-payout.png` (the €10 @ 2.45 bet)
+**Evidence:** [evidence/receipt-swapped-teams-wrong-payout.png](evidence/receipt-swapped-teams-wrong-payout.png) (the €10 @ 2.45 bet)
 
 ---
 
@@ -157,7 +157,7 @@ The 3 scenarios found 8 bugs (one scenario checks many things, so it can find se
 
 **Business Impact:** Together with BUG-06, the customer can't tell which team they backed.
 
-**Evidence:** `evidence/receipt-swapped-teams-wrong-payout.png`
+**Evidence:** [evidence/receipt-swapped-teams-wrong-payout.png](evidence/receipt-swapped-teams-wrong-payout.png)
 
 ---
 
@@ -192,7 +192,7 @@ The 3 scenarios found 8 bugs (one scenario checks many things, so it can find se
 
 **Business Impact:** The receipt is incomplete, so the customer can't verify their pick.
 
-**Evidence:** `evidence/receipt-swapped-teams-wrong-payout.png`
+**Evidence:** [evidence/receipt-swapped-teams-wrong-payout.png](evidence/receipt-swapped-teams-wrong-payout.png)
 
 ---
 
@@ -280,7 +280,7 @@ The 3 scenarios found 8 bugs (one scenario checks many things, so it can find se
 
 **Business Impact:** Customers filtering by odds miss matches they would bet on and get no explanation for an empty list.
 
-**Evidence:** `evidence/odds-filter-drops-matching-match.jpg`, `evidence/odds-filter-invalid-range-no-feedback.jpg`
+**Evidence:** [evidence/odds-filter-drops-matching-match.jpg](evidence/odds-filter-drops-matching-match.jpg), [evidence/odds-filter-invalid-range-no-feedback.jpg](evidence/odds-filter-invalid-range-no-feedback.jpg)
 
 ---
 
@@ -314,7 +314,7 @@ The 3 scenarios found 8 bugs (one scenario checks many things, so it can find se
 
 **Business Impact:** Customers in the Americas filtering by date miss matches, or see them under the wrong day.
 
-**Evidence:** `evidence/date-filter-oct1-berlin.png` (1 match) and `evidence/date-filter-oct1-new-york.png` (0 matches): same filter, only the time zone differs. Tokyo also shows 1 match, Los Angeles 0.
+**Evidence:** [evidence/date-filter-oct1-berlin.png](evidence/date-filter-oct1-berlin.png) (1 match) and [evidence/date-filter-oct1-new-york.png](evidence/date-filter-oct1-new-york.png) (0 matches): same filter, only the time zone differs. Tokyo also shows 1 match, Los Angeles 0.
 
 ---
 
@@ -362,7 +362,7 @@ The 3 scenarios found 8 bugs (one scenario checks many things, so it can find se
 
 **Business Impact:** Misleading, and it makes an empty filtered list look like a loading problem.
 
-**Evidence:** `evidence/odds-filter-invalid-range-no-feedback.jpg` (0 matches shown, header says 103)
+**Evidence:** [evidence/odds-filter-invalid-range-no-feedback.jpg](evidence/odds-filter-invalid-range-no-feedback.jpg) (0 matches shown, header says 103)
 
 ---
 
