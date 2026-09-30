@@ -1,6 +1,6 @@
 # Single Bet Placement
 
-[![tests](https://github.com/EmilMN/SingleBetPlacement/actions/workflows/tests.yml/badge.svg)](https://github.com/EmilMN/SingleBetPlacement/actions/workflows/tests.yml)
+**Note:** the [CI run](https://github.com/EmilMN/SingleBetPlacement/actions/workflows/tests.yml) shows as failing on purpose. Two of the three automated tests fail because they catch real bugs in the app (see below).
 
 | Parts |
 |---|
