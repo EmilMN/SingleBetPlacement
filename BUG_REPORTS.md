@@ -119,7 +119,7 @@ The 3 scenarios found 8 bugs (one scenario checks many things, so it can find se
 
 **Evidence:** [evidence/ui-stale-balance-after-bet.png](evidence/ui-stale-balance-after-bet.png): header €5.99 after the first bet, while the API holds €0.99. After the second bet the API returned `-4.01`.
 
-<img src="evidence/ui-stale-balance-after-bet.png" alt="Header balance not refreshed after a bet" width="600">
+<img src="evidence/ui-stale-balance-after-bet.png" alt="Header balance not refreshed after a bet">
 
 ---
 
@@ -286,7 +286,9 @@ The 3 scenarios found 8 bugs (one scenario checks many things, so it can find se
 
 **Evidence:** [evidence/odds-filter-drops-matching-match.jpg](evidence/odds-filter-drops-matching-match.jpg), [evidence/odds-filter-invalid-range-no-feedback.jpg](evidence/odds-filter-invalid-range-no-feedback.jpg)
 
-<img src="evidence/odds-filter-drops-matching-match.jpg" alt="Odds filter hides a matching match" width="400"> <img src="evidence/odds-filter-invalid-range-no-feedback.jpg" alt="Odds filter accepts an invalid range" width="400">
+<img src="evidence/odds-filter-drops-matching-match.jpg" alt="Odds filter hides a matching match">
+
+<img src="evidence/odds-filter-invalid-range-no-feedback.jpg" alt="Odds filter accepts an invalid range">
 
 ---
 
@@ -322,7 +324,9 @@ The 3 scenarios found 8 bugs (one scenario checks many things, so it can find se
 
 **Evidence:** [evidence/date-filter-oct1-berlin.png](evidence/date-filter-oct1-berlin.png) (1 match) and [evidence/date-filter-oct1-new-york.png](evidence/date-filter-oct1-new-york.png) (0 matches): same filter, only the time zone differs. Tokyo also shows 1 match, Los Angeles 0.
 
-<img src="evidence/date-filter-oct1-berlin.png" alt="1 Oct filter in Berlin: 1 match" width="400"> <img src="evidence/date-filter-oct1-new-york.png" alt="1 Oct filter in New York: 0 matches" width="400">
+<img src="evidence/date-filter-oct1-berlin.png" alt="1 Oct filter in Berlin: 1 match">
+
+<img src="evidence/date-filter-oct1-new-york.png" alt="1 Oct filter in New York: 0 matches">
 
 ---
 
