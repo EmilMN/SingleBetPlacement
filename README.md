@@ -1,4 +1,4 @@
-# Single Bet Placement
+<img src="assets/banner.svg" alt="Single Bet Placement · QA: 6 scenarios, 18 bugs (3 critical), 3 automated tests">
 
 **Note:** the [CI run](https://github.com/EmilMN/SingleBetPlacement/actions/workflows/tests.yml) shows as failing on purpose. Two of the three automated tests fail because they catch real bugs in the app (see below).
 
